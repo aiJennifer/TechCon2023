@@ -1,0 +1,234 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    background-image: url('Images/abstract-technology-background-design-wavy-line-design-purple-color_600873-88.webp');
+    background-size: cover;
+    background-position: center;
+
+
+
+
+}
+
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+
+
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+.main-content {
+    padding: 2em;
+}
+
+
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.cta-button:hover {
+    background-color: #333366;
+}
+
+
+
+
+footer {
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+
+
+
+/* Schedule Page */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+
+
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+/* Speakers Page */
+.speaker {
+    margin-bottom: 30px;
+}
+
+
+
+
+.speaker img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+.speaker h2 {
+    color: #fff;
+}
+
+
+
+
+.speaker p {
+    color: #fff;
+}
+
+
+
+
+/* Contact Page */
+form {
+    margin-top: 20px;
+}
+
+
+
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solidS #333;
+    border-radius: 5px;
+}
+
+
+
+
+form button {
+    background-color: #330066;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+form button:hover {
+    background-color: #333;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+h2 {
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+p {
+    color: #333;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h3 {
+    color: #333;
+}

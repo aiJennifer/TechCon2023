@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js" defer></script>
+    <title>TechCon Leicester 2023 - Registration</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h1>REGISTRATION</h1>
+        <form action="sample.html" method="post">
+            <label for="name">Full name:</label>
+            <input type="text" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+        
+            <label for="number">Work Phone:</label>
+            <input type="number" name="number" required>
+        
+            <label for="address1">Address Line 1:</label>
+            <input type="text" name="address1" required>
+        
+            <label for="address2">Address Line 2:</label>
+            <input type="text" name="address2">
+        
+            <label for="city">City:</label>
+            <input type="text" name="city" required>
+        
+            <label for="postcode">Postcode:</label>
+            <input type="text" name="postcode" required>
+        
+            <label for="fields">Tech Field of Interest:</label>
+            <select name="fields" id="fields">
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Fintech">Fintech</option>
+            </select>
+        
+            <button type="submit">Submit</button>
+        </form>
+
+        <footer>
+            <p>&copy; TechCon Leicester 2023. All rights reserved.</p>
+        </footer>      
+</body>
+</html>

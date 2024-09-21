@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TechCon 2023 - Schedule</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <label for="daySelector"> Choose a day :</label>
+    <select id="daySelector" onchange="filterSchedule()">
+        <option value="all">Both days</option>
+        <option value="day 1">Day 1</option>
+        <option value="day 2">Day 2</option>
+    </select>
+
+    <section class="main-content">
+       <h1>SCHEDULE</h1>
+        <!-- Schedule table goes here -->
+        <table id="Day_1">
+            <caption><h3>Day 1</h3></caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Day 1 -->
+                <tr>
+                    <td>9:00 - 10:00 AM</td>
+                    <td>Registration and Welcome Coffee</td>
+                    <td>Percy Gee</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 10:30 AM</td>
+                    <td>Opening Ceremony</td>
+                    <td>Sir Bobs Burgees 1.01</td>
+                </tr>
+                <tr>
+                    <td>10:30 - 11:30 AM</td>
+                    <td>Keynote Address by Lenovo CEO, Yuanquing Yang</td>
+                    <td>Sir Bobs Burgees 1.01</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 12:30 PM</td>
+                    <td>Technology Trends in the Industry</td>
+                    <td>Sir Bobs Burgees 1.01</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 01:30 PM</td>
+                    <td>Networking Lunch</td>
+                    <td>Freemens Kitchen and Bar</td>
+                </tr>
+        
+                <!-- Day 1 - Technical Tracks -->
+                <tr>
+                    <td>01:30 - 02:30 PM</td>
+                    <td>Breakout Session 1: Advances in Laptop Technology</td>
+                    <td>Percy Gee</td>
+                </tr>
+                <tr>
+                    <td>02:45 - 03:45 PM</td>
+                    <td>Breakout Session 2: Data Security in the Modern Age</td>
+                    <td>Percy Gee</td>
+                </tr>
+                <tr>
+                    <td>04:00 - 05:00 PM</td>
+                    <td>Panel Discussion: The Future of AI in Tech</td>
+                    <td>David Wilson Library</td>
+                </tr>
+        
+                <!-- Day 1 - Evening Networking Event -->
+                <tr>
+                    <td>06:30 - 08:30 PM</td>
+                    <td>Welcome Reception and Networking Dinner</td>
+                    <td>Freemens Kitchen and Bar</td>
+                </tr>
+        </tbody>
+    </table>
+
+    <table id="Day_2">
+            <caption><h3>Day 2</h3></caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Day 2 - Innovation Showcase and Workshops -->
+                <tr>
+                    <td>09:00 - 10:00 AM</td>
+                    <td>Morning Coffee and Innovation Showcase</td>
+                    <td>David Wilson Library</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00 AM</td>
+                    <td>Workshop 1: Design Thinking in Tech Innovation</td>
+                    <td>Percy Gee</td>
+                </tr>
+                <tr>
+                    <td>11:15 - 12:15 PM</td>
+                    <td>Workshop 2: Exploring Lenovo's Latest Products</td>
+                    <td>Percy Gee</td>
+                </tr>
+                <tr>
+                    <td>12:15 - 01:15 PM</td>
+                    <td>Networking Lunch</td>
+                    <td>Freemens Kitchen and Bar</td>
+                </tr>
+        
+                <!-- Day 2 - Emerging Technologies -->
+                <tr>
+                    <td>01:30 - 02:30 PM</td>
+                    <td>Breakout Session 3: The Rise of Edge Computing</td>
+                    <td>Sir Bobs Burgees 2.01</td>
+                </tr>
+                <tr>
+                    <td>02:45 - 03:45 PM</td>
+                    <td>Breakout Session 4: 5G and the Future of Connectivity</td>
+                    <td>Sir Bobs Burgees 2.01</td>
+                </tr>
+                <tr>
+                    <td>04:00 - 05:00 PM</td>
+                    <td>Fireside Chat: Future Tech Trends - A Conversation with Industry Experts</td>
+                    <td>Sir Bobs Burgees 2.01</td>
+                </tr>
+        
+                <!-- Day 2 - Closing Ceremony -->
+                <tr>
+                    <td>05:00 - 06:00 PM</td>
+                    <td>Closing Keynote and Thank You Address</td>
+                    <td>David Wilson Library</td>
+                </tr>
+                <tr>
+                    <td>06:00 - 07:00 PM</td>
+                    <td>Closing Reception and Networking</td>
+                    <td>David Wilson Library</td>
+                </tr>
+        </tbody>
+    </table>
+
+    <!--Enabling the user to select different activities happening during the event -->
+   <script>
+    function filterSchedule() {
+        var selectedDay = document.getElementById("daySelector").value;
+
+        document.getElementById("Day_1").style.display = "none";
+        document.getElementById("Day_2").style.display = "none";
+
+        if (selectedDay == "day 1") {
+            document.getElementById("Day_1").style.display = "table";
+        } else if (selectedDay == "day 2") {
+            document.getElementById("Day_2").style.display = "table";
+        } else {
+            document.getElementById("Day_1").style.display = "table";
+            document.getElementById("Day_2").style.display = "table";
+        }
+    }
+</script>
+
+<footer>
+    <p>&copy; TechCon Leicester 2023. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

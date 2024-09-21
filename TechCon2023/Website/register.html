@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- linking my htmls with my css and java -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js"></script>
+    <title>TechCon Leicester 2023 - Registration</title>
+    <style>
+        /* makes my titles animated */
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        h1 {
+          font-family: 'Arial', sans-serif;
+          text-align: center;
+          animation: fadeInUp 1s ease-in-out;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h1>REGISTRATION</h1>
+        <p>Welcome to another year of forefront innovation and technological excellence. This year we are holding the Lenovo tech conference. A symphony of groundbreaking ideas and cutting-edge advancements, invites you to embark on a journey into the future of technology. As the digital landscape continues to evolve at an unprecedented pace, this conference stands as a beacon, bringing together visionaries and tech enthusiasts. Join us for an immersive experience where the boundaries of possibility are pushed, and the latest breakthroughs in computing, artificial intelligence, and intelligent devices take center stage. Get ready to explore, learn, and connect at the epicenter of innovation – the Lenovo Tech Conference awaits, where the future unfolds today.</p>
+        <p>30th and 31st of November 2023 </p>
+        <p>The University of Leicester, University Road, Leicester, LE1 7RH, United Kingdom</p>
+       <!-- after submit then u go to congratulations page, but now java script not working properly still fixing -->
+        <form action="congratulations.html" method="post">
+        
+            <label for="name">Full name:</label>
+            <input type="tsjext" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+        
+            <label for="number">Work Phone:</label>
+            <input type="number" name="number" required>
+        
+            <label for="address1">Address Line 1:</label>
+            <input type="text" name="address1" required>
+        
+            <label for="address2">Address Line 2:</label>
+            <input type="text" name="address2">
+        
+            <label for="city">City:</label>
+            <input type="text" name="city" required>
+        
+            <label for="postcode">Postcode:</label>
+            <input type="text" name="postcode" required>
+        
+            <label for="fields">Tech Field of Interest:</label>
+            <select name="fields" id="fields">
+                <option value="Software Developement">Software Developement</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Cyber Security">Cyber Security</option>
+            </select>
+            
+            <button type="submit" onclick="window.location.href='congratulations.html'">Submit</button>
+    
+        </form>
+       
+        <footer>
+            <p>&copy; TechCon Leicester 2023. All rights reserved.</p>
+        </footer>
+        <script>
+            // JavaScript code to handle button click and go to congratulations page
+            document.getElementById('congratulations.html').addEventListener('click', function() {
+                
+                window.location.href = 'congratulations.html';
+            });
+        </script>
+</body>
+</html>
